@@ -1,0 +1,55 @@
+$gray = #888
+$gray-light = #aaa
+$gray-lighter = #ccc
+$gray-dark = #333
+$small-font = 11px
+		
+.chart 
+	max-width 40rem
+	margin 0 auto
+	text-align center
+
+.slider
+	max-width 20rem
+	margin 1rem auto
+	position relative
+	padding-top $small-font * 1.5
+	input
+		display block
+		width 100%
+	&:before
+		content 'Quality'
+		text-transform uppercase
+		font-size $small-font
+		letter-spacing 0.05em
+		color $gray
+		display inline-block
+		position absolute
+		top 0
+		left 0
+	&:after
+		content 'Quantity'
+		text-transform uppercase
+		font-size $small-font
+		letter-spacing 0.05em
+		color $gray
+		display inline-block
+		position absolute
+		top 0
+		right 0
+			
+.g-axis 
+	line, path
+		stroke $gray-lighter
+	text 
+		fill $gray
+
+.g-axis .axis__label
+	text-transform uppercase
+	font-size $small-font
+	letter-spacing 0.05em
+	fill $gray
+	
+.item
+	fill-opacity 0.75
+
