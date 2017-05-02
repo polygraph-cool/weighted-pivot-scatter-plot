@@ -14,7 +14,7 @@
 	The mental model of higher on the chart equaling worse takes a bit of thought, but nonetheless, the chart was effective. It was helpful to have a single focal point to anchor the reader, and the lines enabled you to spatially compare the nodes.
 </p>
 <p>
-	For my chart, I started with two dimensions; a score for quality, and one for quantity. This was easy to whip up since it was a traditional scatter plot. Unlike the NYT’s example, I had no starting point for comparison. The encoding for “better” relied upon size and color, which was dynamic based on user input. Try it out below.
+	For my chart, I started with two dimensions: a score for quality, and one for quantity. This was easy to whip up since it was a traditional scatter plot. Unlike the NYT’s example, I had no starting point for comparison. The encoding for “better” relied upon size and color, which was dynamic based on user input. Try it out below.
 </p>
 <div class='graphic graphic--1 tk-atlas'>
 	<div class='chart'></div>
@@ -24,7 +24,7 @@
 	<a href='https://bl.ocks.org/5af7511ac730089820ca7c0406afd496' target='_blank'>view code</a>
 </p>
 <p>
-	This worked. But to me, it didn’t do a good job at communicating what was going on behind the scenes of the weighting. I decided try a spatial encoding to further emphasize the weighting factors. The most obvious way was to make axes proportional to their weight. So if our chart was 100x100, and the “quality” was weighted at 60%, it would be 60x40. The more a circle was towards the top-right corner, the higher its rank.
+	This worked. But to me, it didn’t do a good job at communicating what was going on behind the scenes of the weighting. I decided to try a spatial encoding to further emphasize the weighting factors. The most obvious way was to make axes proportional to their weight. So if our chart was 100x100, and the “quality” was weighted at 60%, it would be 60x40. The more a circle was towards the top-right corner, the higher its rank.
 </p>
 <div class='graphic graphic--2 tk-atlas'>
 	<div class='chart'></div>
@@ -43,10 +43,10 @@
 	The final step was to implement a combination of the visually proportional axes with the rotated chart to achieve maximum spatial encoding and understanding.
 </p>
 <p>
-	For this to work, I had to dig into some mild trigonometry. I first needed to find the length of the hypotenuse (the line from bottom-left to top-right) in order to scale the axes as they change. This would keep the chart dimensions consistent. I then needed to calculate the angle of that this triangle to rotate the chart, thus keeping the hypotenuse vertically oriented.
+	For this to work, I had to dig into some mild trigonometry. I first needed to find the length of the hypotenuse (the line from bottom-left to top-right) in order to scale the axes as they changed. This would keep the chart dimensions consistent. I then needed to calculate the angle of the triangle to rotate the chart, thus keeping the hypotenuse vertically oriented.
 </p>
 <p>
-	I applied these transformations to the the chart and voila, the weighted pivot scatter plot was alive.
+	I applied these transformations to the chart and voila, the weighted pivot scatter plot was alive.
 </p>
 <div class='graphic graphic--3 tk-atlas'>
 	<div class='chart'></div>
@@ -56,5 +56,5 @@
 	<a href='https://bl.ocks.org/aba5f81a8bd0633a399d692289ab97eb' target='_blank'>view code</a>
 </p>
 <p>
-	Was the extra level of encoding necessary? Maybe not, but it came with one unexpected and undeniable side effect; it was fun. Watching the chart pivot and transition in response to your input is playful. I believe that it made the chart more engaging. Despite being a fairly short story, it got upwards of 10 minutes time on page per user. It also invites the user to more deeply explore the data, which has a less quantifiable effect, much like a gorgeous presentation. 
+	Was the extra level of encoding necessary? Maybe not, but it came with one unexpected and undeniable side effect: it was fun. Watching the chart pivot and transition in response to your input is playful. I believe that it made the chart more engaging. Despite being a fairly short story, it got upwards of 10 minutes on page per user. It also invites the user to more deeply explore the data, which has a less quantifiable effect, much like a gorgeous presentation. 
 </p>
