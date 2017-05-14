@@ -6,17 +6,17 @@
 	<figcaption class='tk-atlas'>Example of the weighted pivot scatter plot in action</figcpation>
 </figure>
 <p>
-	The idea for this chart started when <a href='twitter.com/matthew_daniels' target='_blank'>Matt</a> sent me the latest <a href='https://www.nytimes.com/interactive/2017/03/30/upshot/good-schools-affordable-homes-suburban-sweet-spots.html' target='_blank'>Upshot</a> article that explored school systems and home prices. I was still in the process of figuring out how I wanted to display the rankings of all cities, and he suggested something similar.
+	The idea for this chart started when <a href='twitter.com/matthew_daniels' target='_blank'>Matt</a> sent me the latest <a href='https://www.nytimes.com/interactive/2017/03/30/upshot/good-schools-affordable-homes-suburban-sweet-spots.html' target='_blank'>Upshot article</a> that explored school systems and home prices. I was still in the process of figuring out how I wanted to display the rankings of all cities, and he suggested something similar.
 </p>
 <figure>
 	<img src='assets/nyt.jpg' alt='Screenshot of The Upshot chart'>
 	<figcaption class='tk-atlas'>Screenshot of The Upshot chart</figcpation>
 </figure>
 <p>
-	The mental model of higher on the chart equaling worse (higher home price, worse school) is counterintuitive, I still found the chart effective. It was helpful to have a single focal point to anchor the reader, and the lines enabled you to spatially compare the nodes.
+	Although the mental model of higher on the chart equaling worse (higher home price, worse school) is counterintuitive, I still found the chart effective. It was helpful to have a single focal point to anchor the reader, and the lines enabled you to spatially compare the nodes.
 </p>
 <p>
-	For my chart, I started with two dimensions: a score for quality, and one for quantity. This was easy to whip up since it was a traditional scatter plot. Unlike the NYT’s example, I had no anchor point for comparison. The encoding for “better” relied upon size and color, which was dynamic based on user input. Try it out below.
+	For my chart, I started with two dimensions: a score for quality, and one for quantity. This was easy to whip up since it was a traditional scatter plot. Unlike the NYT example, I had no anchor point for comparison. The encoding for “better” relied upon size and color, which was dynamic based on user input. Try it out below.
 </p>
 <div class='graphic graphic--1 tk-atlas'>
 	<div class='chart'></div>
@@ -36,7 +36,7 @@
 	<a href='https://bl.ocks.org/5dfe0e5ad8bff4556a2167d885a44ec7' target='_blank'>view code</a>
 </p>
 <p>
-	This worked, too. But there were two problems: the chart kept changing size (a bit awkward), and the “more towards the top-right means better” concept might be less intuitive to the layperson. I started looking at other graphics for inspiration and remembered Adam Pearce’s <a href='http://roadtolarissa.com/nba-win-loss/' target='_blank'>rotated scatter plot</a>, used to better align the chart trend with your level gaze. 
+	This worked, too. But there were two problems: the chart kept changing size (a bit awkward looking), and the “more towards the top-right means better” concept might be less intuitive to the layperson. I started looking at other graphics for inspiration and remembered Adam Pearce’s <a href='http://roadtolarissa.com/nba-win-loss/' target='_blank'>rotated scatter plot</a>, used to better align the chart trend with your level gaze. 
 </p>
 <figure>
 	<img src='assets/larissa.jpg' alt='Screenshot of Adam Pearce’s rotated scatter plot' >
@@ -59,7 +59,7 @@
 	<a href='https://bl.ocks.org/aba5f81a8bd0633a399d692289ab97eb' target='_blank'>view code</a>
 </p>
 <p>
-	<strong>Was the extra level of encoding necessary? Maybe not, but it came with one unexpected and undeniable side effect: it was fun.</strong> Watching the chart pivot and transition in response to your input is  playful. I feel that it made the chart more engaging. It drew the reader in, much like a gorgeous presentation, which in turn made them more like to explore the data. Despite being a fairly short story, it got upwards of 10 minutes on page per user. While I’m not an analytics junkie, to me that says something about nature of the interactive.
+	<strong>Was the extra level of encoding necessary? Maybe not, but it came with one unexpected and undeniable side effect: it was fun.</strong> Watching the chart pivot and transition in response to your input is  playful. I feel that it made the chart more engaging. It drew the reader in, much like a gorgeous presentation, which in turn made them more like to explore the data. Despite being a fairly short story, it got upwards of 10 minutes on page per user. While I’m not an analytics junkie, to me that says something about the power of interactivity.
 </p>
 
 <p>
